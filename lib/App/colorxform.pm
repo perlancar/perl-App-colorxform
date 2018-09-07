@@ -130,7 +130,7 @@ sub colorxform {
             $xformcode = _color_name_to_bg_code($v);
             last if defined $xformcode;
             if ($v =~ /\A#([0-9A-Fa-f]{2})([0-9A-Fa-f]{2})([0-9A-Fa-f]{2})\z/) {
-                $xformcode = sprintf "38;2;%d;%d;%d",
+                $xformcode = sprintf "48;2;%d;%d;%d",
                     hex($1), hex($2), hex($3);
                 last;
             }
