@@ -48,16 +48,20 @@ replace some colors with another, per your specification.
 
 An example, put this in your `~/.config/colorxform.conf`:
 
-    [profile=ledger1]
+    [profile=ledger]
     fg_transforms = {"blue":"#18b2b2", "red":"bold red"}
 
 then:
 
-    % ledger -f myledger.dat --color --force-color | colorxform -P ledger1
+    % ledger -f myledger.dat --color --force-color balance | colorxform -P ledger
 
 You can create a shell alias for convenience:
 
-    % function ledger() { `which ledger` --color --force-color "$@" | colorxform -P ledger1; }
+    % function ledger() { `which ledger` --color --force-color "$@" | colorxform -P ledger; }
+
+so you can just issue this to get the colors transformed:
+
+    % ledger -f myledger.dat balance
 
 _
     args => {
