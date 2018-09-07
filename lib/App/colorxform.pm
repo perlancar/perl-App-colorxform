@@ -6,7 +6,6 @@ package App::colorxform;
 use 5.010001;
 use strict;
 use warnings;
-use Log::ger;
 
 our %SPEC;
 
