@@ -1,0 +1,16 @@
+#!perl
+
+# DATE
+# VERSION
+
+use 5.010001;
+use strict;
+use warnings;
+use Perinci::CmdLine::Any;
+
+Perinci::CmdLine::Any->new(
+    url => '/App/colorxform/colorxform',
+)->run;
+
+# ABSTRACT:
+# PODNAME:
