@@ -142,7 +142,7 @@ sub colorxform {
     my $transform = sub {
         my $codes = shift;
         my @codes;
-        while ($codes =~ /(38;2;[0-9]+;[0-9]+;[0-9]+|38;5;[0-9]+;[0-9]+|[0-9]+)/g) {
+        while ($codes =~ /(38;2;[0-9]+;[0-9]+;[0-9]+|38;5;[0-9]+|[0-9]+)/g) {
             push @codes, $1;
         }
         my @xformcodes;
