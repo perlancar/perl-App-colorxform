@@ -1,4 +1,4 @@
-0.002   2018-09-07 (PERLANCAR)
+0.002   2018-09-07  Released-By: PERLANCAR
 
 	- [bugfix] Fix generated background code.
 
@@ -7,6 +7,6 @@
 	- [dist] Remove unnecessary dependency.
 
 
-0.001   2018-09-07 (PERLANCAR)
+0.001   2018-09-07  Released-By: PERLANCAR
 
         - First, early release.
